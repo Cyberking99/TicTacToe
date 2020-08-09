@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple tic tac toe game using JS, HTML and CSS">
+    <meta name="author" content="Kefas Kingsley">
+    <meta name="keywords" content="HTML, CSS, JS, Browser-game, tic-tac-toe, leonlit">
+    <link rel="stylesheet" href="css/mobile.css"/>
+    <link rel="stylesheet" href="css/tablet.css"/>
+    <link rel="stylesheet" href="css/desktop.css"/>
+    <title>Tic Tac Toe - KC</title>
+  </head>
+  <body>
+    <p style="color: #fff;font-size: 1.5em;" align="center"><b><u>* TIC TAC TOE *</u></b></p>
+    <br>
+    <div id="scoreBoard">      
+      <label>Computer</label>
+      <span id="computerScore">0</span>
+
+      <label>Player</label>
+      <span id="playerScore">0</span>
+    </div>
+
+    <span id="restart" onclick="gameInit();playSound(1);">Restart</span>
+    <div></div>
+
+    <table class="gameBoard center_FixedContAndText">
+      <tr>
+        <td id="0"></td>
+        <td id="1"></td>
+        <td id="2"></td>
+      </tr>
+      <tr>
+        <td id="3"></td>
+        <td id="4"></td>
+        <td id="5"></td>
+      </tr>
+      <tr>
+        <td id="6"></td>
+        <td id="7"></td>
+        <td id="8"></td>
+      </tr>
+    </table>
+    <div id="shader"></div>
+    <div class="center_FixedContAndText" id="gameOver"><div id="close" onclick="playSound(1)">&#10006;</div><div class="center_FixedContAndText">The match result is :<br><br><span id="winTeam"></span></div></div>
+  </body>
+</html>
+
+<script src="scripts/index.js?10000"></script>
+<script src="scripts/boardScript.js?10000"></script>
+
